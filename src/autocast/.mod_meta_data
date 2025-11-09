@@ -1,0 +1,11 @@
+{
+  "compatibility_version": 2,
+  "display_name": "Vanilla autocast enhancements",
+  "display_version": "1.0.0",
+  "short_description": "Autocast enhancements for vanilla",
+  "long_description": "Autocast enhancements for vanilla. Modifies simulation - all players in multiplayer must have this mod. Built for patch 1.45.",
+  "logos": {
+    "large_logo": "picture.png",
+    "small_logo": "picture.png"
+  }
+}
