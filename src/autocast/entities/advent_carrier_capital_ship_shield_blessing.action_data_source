@@ -81,7 +81,7 @@
       "action_value_id": "shield_blessing_autocast_prevention_radius",
       "action_value":
       {
-        "values": [10000]
+        "values": [20000]
       }
     }
     ],
