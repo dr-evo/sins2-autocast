@@ -32,7 +32,7 @@
                   "unit_type": "current_spawner"
                 },
                 "unit_constraint": {
-                  "constraint_type": "has_missing_hull",
+                  "constraint_type": "has_missing_armor",
                   "percentage_missing_threshold": 0.1
                 }
               },
