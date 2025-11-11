@@ -23,9 +23,6 @@
           ],
           "constraints": [
             {
-              "constraint_type": "is_fully_built"
-            },
-            {
               "constraint_type": "has_buff",
               "buff": "advent_carrier_capital_ship_shield_blessing_on_spawner",
               "include_pending_buffs": true
