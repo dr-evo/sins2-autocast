@@ -1,0 +1,157 @@
+# advent
+- acolyte 
+  - refill antimatter - prioritization
+- guardian
+  - shield projection
+  - renew - prioritization
+- subjugator 
+  - suppression - prioritization
+  - nullify - prioritization
+- crusader - ruthlessness
+- radiance
+  - antimatter
+  - animosity
+  - cleansing brilliance 
+- progenitor
+  - shield boost
+  - resurrection
+- halcyon
+  - telekinetic push
+  - anima tempest
+  - shield blessing
+- revelation
+  - reverie
+  - guidance
+  - quell - overlap
+  - provoke hysteria - overlap?
+- rapture
+  - vertigo - overlap
+  - vengeance - prioritization (radiance)
+  - domination - prio
+  - malice - aoe prio
+- oblivia
+  - psikinetic blast
+  - subsume energy
+  - stasis beam
+- justicia
+  - judgement
+  - reinvigorate
+  - flare
+- eradica
+  - chastic burst
+  - purification
+- coronata
+  - unity mass
+  - subjugation
+- transcencia
+  - meteor storm
+- deliverance engine
+  - culture deliverance
+  - dominating deliverance 
+  - resurrecting deliverance
+
+
+- plasma nova - overlap
+- antimatter pod - dont use too soon
+- shield booster
+- harmony circuit - target friendly advent caps only, avoid if buff already present
+
+# TEC
+- kalev
+  - coil shock
+- hoshiko
+  - repair droids
+  - recharger droid
+- javelis
+  - breaker missile
+- ogrov
+  - torpedo targeting override
+- kol
+  - beam
+  - fusillade
+  - force field
+  - finest hour
+- sova
+  - missile battery
+  - mass production - overlap
+  - rapid manufacturing
+- akkan
+  - inspiring broadcast
+  - armistice
+- dunov
+  - energy transfer
+  - emp
+  - magnetic singluarity
+  - overcharge
+- marza
+  - concussion charge
+  - precision targeting
+  - raze planet
+  - missile barrage
+- takadaran
+  - coordinate attack
+  - hold the line
+  - magnetic overshield
+  - tactical reserve fleet
+- khevarkov
+  - tactical assault
+  - modular overdrive
+  - nav computer
+  - ion pulse wave
+- akylon
+  - disruption matrix
+  - furious defence
+  - shield surge
+  - invulnerability field
+- ragnarov
+  - piercing shot
+  - explosive shot
+  - novalith
+- argonev
+  - safety override
+- novalith
+  - fire novalith
+
+# vasari
+- kanrak assailant
+  - charged phase missile
+- overseer
+  - intimidating presence - overlap
+- kortul devastator
+  - power surge
+  - jam weapons - overlap
+  - volatile nanites
+- jarrasul evacuator
+  - gravity warhead
+  - subspace rupture - overlap, prio with gravity
+  - drain planet
+- skirantra carrier
+  - nanite armor
+  - repair cloud
+  - replicate forces
+- antorak marauder
+  - phase out hull
+  - sabotage
+  - phase restoration
+- vulkoras desolator
+  - phase missile swarm
+  - deploy siege platform
+  - disintegration bean
+- sularkon tyrant
+  - nano culling
+  - terrorize
+  - subversion grid
+- anarkrul wanderer
+  - countermeasure pulse
+  - phase escape
+  - nano devourer plague
+- kultorask
+  - nano leech
+  - nano remit
+  - gravity pulse
+  - dissever
+- vorastra
+  - micro phase jump
+  - the maw
+- orkulus
+  - debris reintegration
