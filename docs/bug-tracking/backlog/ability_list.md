@@ -7,21 +7,22 @@
 - subjugator 
   - suppression - prioritization
   - nullify - prioritization
-- crusader - ruthlessness
+- crusader 
+  - ruthlessness
 - radiance
   - antimatter
-  - animosity
-  - cleansing brilliance 
+  - animosity - overlap, target priority
+  - cleansing brilliance - aoe prio
 - progenitor
-  - shield boost
-  - resurrection
+  - shield boost - ok
+  - resurrection - ok
 - halcyon
-  - telekinetic push
-  - anima tempest
-  - shield blessing
+  - telekinetic push - overlap
+  - anima tempest - prio
+  - shield blessing - ok
 - revelation
-  - reverie
-  - guidance
+  - reverie - prio
+  - guidance - prio
   - quell - overlap
   - provoke hysteria - overlap?
 - rapture
@@ -32,56 +33,59 @@
 - oblivia
   - psikinetic blast
   - subsume energy
-  - stasis beam
+  - stasis beam - prio
 - justicia
-  - judgement
-  - reinvigorate
+  - judgement - prio
+  - reinvigorate - overlap?
   - flare
 - eradica
-  - chastic burst
-  - purification
+  - chastic burst - prio
+  - purification - prio / thresholds
 - coronata
-  - unity mass
+  - unity mass - prio
   - subjugation
 - transcencia
   - meteor storm
 - deliverance engine
-  - culture deliverance
+  - culture deliverance - autocast default?
   - dominating deliverance 
   - resurrecting deliverance
+- temple of renewal
+  - recharge antimatter
+  - recharge shields
+- items    
+  - plasma nova - overlap
+  - antimatter pod - dont use too soon
+  - shield booster
+  - harmony circuit - target friendly advent caps only, avoid if buff already present
 
-
-- plasma nova - overlap
-- antimatter pod - dont use too soon
-- shield booster
-- harmony circuit - target friendly advent caps only, avoid if buff already present
 
 # TEC
 - kalev
-  - coil shock
+  - coil shock - prio
 - hoshiko
-  - repair droids
-  - recharger droid
+  - repair droids - prio
+  - recharger droid - prio, no useless targets
 - javelis
   - breaker missile
 - ogrov
   - torpedo targeting override
 - kol
-  - beam
-  - fusillade
-  - force field
-  - finest hour
+  - beam - prio
+  - fusillade - condition
+  - force field - condition
+  - finest hour - condition
 - sova
   - missile battery
   - mass production - overlap
   - rapid manufacturing
 - akkan
-  - inspiring broadcast
+  - inspiring broadcast - overlap - OK
   - armistice
 - dunov
-  - energy transfer
-  - emp
-  - magnetic singluarity
+  - energy transfer - prio
+  - emp - prio
+  - magnetic singluarity - overlap , condition
   - overcharge
 - marza
   - concussion charge
@@ -96,21 +100,25 @@
 - khevarkov
   - tactical assault
   - modular overdrive
-  - nav computer
+  - nav computer - condition
   - ion pulse wave
 - akylon
   - disruption matrix
   - furious defence
   - shield surge
-  - invulnerability field
+  - invulnerability field - no autocast
 - ragnarov
-  - piercing shot
+  - piercing shot - prio
   - explosive shot
   - novalith
 - argonev
   - safety override
+  - docking boons - prio, condition
 - novalith
   - fire novalith
+- items    
+  - rad bomb - overlap - OK, no change ? maybe set priority filter for AOE instead of single targets
+  - flak - overlap
 
 # vasari
 - kanrak assailant
@@ -118,29 +126,29 @@
 - overseer
   - intimidating presence - overlap
 - kortul devastator
-  - power surge
+  - power surge - condition
   - jam weapons - overlap
   - volatile nanites
 - jarrasul evacuator
-  - gravity warhead
+  - gravity warhead - overlap, prio with rupture
   - subspace rupture - overlap, prio with gravity
   - drain planet
 - skirantra carrier
-  - nanite armor
-  - repair cloud
-  - replicate forces
+  - nanite armor - prio
+  - repair cloud - condition
+  - replicate forces - prio
 - antorak marauder
-  - phase out hull
-  - sabotage
+  - phase out hull - dont autocast on enemy
+  - sabotage - overlap
   - phase restoration
 - vulkoras desolator
-  - phase missile swarm
+  - phase missile swarm - prio
   - deploy siege platform
-  - disintegration bean
+  - disintegration bean - prio
 - sularkon tyrant
-  - nano culling
-  - terrorize
-  - subversion grid
+  - nano culling - prio
+  - terrorize - prio
+  - subversion grid - overlap
 - anarkrul wanderer
   - countermeasure pulse
   - phase escape
@@ -148,10 +156,12 @@
 - kultorask
   - nano leech
   - nano remit
-  - gravity pulse
-  - dissever
+  - gravity pulse - combine with nano leech
+  - dissever - combine with nano leech
 - vorastra
   - micro phase jump
   - the maw
 - orkulus
-  - debris reintegration
+  - debris reintegration - autocast - OK
+- items
+  - attack nanites
