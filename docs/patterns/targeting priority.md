@@ -1,5 +1,10 @@
-ability.auto_cast:
+# Overview
+Use ability on a targets with certain conditions as a priority.
+- e.g. use on higher priority targets first - boarding crew, reverie
+- e.g. use in combination with other buffs - subspace rupture, gravity warhead  
 
+# Example
+ability.auto_cast:
 ```json
 {
   "auto_cast": {

@@ -165,3 +165,7 @@
   - debris reintegration - autocast - OK
 - items
   - attack nanites
+
+
+# other
+- boarding crew

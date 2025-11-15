@@ -1,7 +1,13 @@
-add 'target_constraint' = 'has_valid_targets_in_radius' 
-with 'target_count_value' = desired minimum target count
+# Overview
+Target an AOE only if it has at least X valid targets.
+e.g. subspace rupture, radiation bomb
 
-combine with targeting priority if necessary
+combine with targeting priority or overlap if necessary
+
+
+# Example
+add 'target_constraint' = 'has_valid_targets_in_radius'
+with 'target_count_value' = desired minimum target count
 
 ability.auto_cast
 ```json

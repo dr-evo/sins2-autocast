@@ -1,5 +1,9 @@
-- cast spell if condition met AND NOT same spell in effect around caster
-- e.g. plasma nova, flak burst, shield blessing...
+# Overview
+Avoid casting buff if another is active within its area (on self or target)
+e.g. plasma nova, flak burst, shield blessing...
+
+# Example
+cast spell if condition met AND NOT same spell in effect around caster
 
 ability.auto_cast:
 ```json
