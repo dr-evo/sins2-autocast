@@ -12,6 +12,3 @@ REM /Y : Suppresses prompting to confirm overwriting of existing destination fil
 REM /PURGE : delete dest files/dirs that no longer exist in source
 
 robocopy "%SourceFolder%" "%DestinationFolder%" /E /R:0 /W:0
-
-
-pause
