@@ -10,7 +10,7 @@
 - crusader 
   - ruthlessness
 - radiance
-  - antimatter
+  - detonate antimatter
   - animosity - overlap, target priority
   - cleansing brilliance - aoe prio
 - progenitor
@@ -19,7 +19,7 @@
 - halcyon
   - telekinetic push - overlap
   - anima tempest - prio
-  - shield blessing - ok
+  - shield blessing - overlap - fixed
 - revelation
   - reverie - prio
   - guidance - prio
@@ -117,8 +117,8 @@
 - novalith
   - fire novalith
 - items    
-  - rad bomb - overlap - OK, no change ? maybe set priority filter for AOE instead of single targets
-  - flak - overlap
+  - rad bomb - aoe - wontfix, can't be fixed on position targeted abilities
+  - flak - overlap - fixed
 
 # vasari
 - kanrak assailant
@@ -130,13 +130,15 @@
   - jam weapons - overlap
   - volatile nanites
 - jarrasul evacuator
-  - gravity warhead - overlap, prio with rupture
-  - subspace rupture - overlap, prio with gravity
+  - gravity warhead - prio - fixed, don't target subcaps 
+  - subspace rupture 
+    - aoe - wontfix, can't be fixed on position targeted abilities
+    - prio - fixed - prioritizes targets with gravity warhead
   - drain planet
 - skirantra carrier
   - nanite armor - prio
   - repair cloud - condition
-  - replicate forces - prio
+  - replicate forces - prio - fixed, doesn't target non combatants
 - antorak marauder
   - phase out hull - dont autocast on enemy
   - sabotage - overlap
@@ -162,7 +164,7 @@
   - micro phase jump
   - the maw
 - orkulus
-  - debris reintegration - autocast - OK
+  - debris reintegration - autocast - fixed, casts if missing armor and was damaged recently
 - items
   - attack nanites
 
