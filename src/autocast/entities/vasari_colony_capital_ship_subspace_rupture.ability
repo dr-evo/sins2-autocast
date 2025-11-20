@@ -34,19 +34,7 @@
         "firing_angle": 180.0,
         "auto_cast":
         {
-            "enabled_by_default_behavior": "always",
-            "caster_constraint": {
-              "constraint_type": "composite_not",
-              "constraint": {
-                "constraint_type": "has_valid_targets_in_radius",
-                "radius_origin_unit": {
-                  "unit_type": "current_spawner"
-                },
-                "radius_value": "subspace_rupture_range_value",
-                "target_filter_id": "subspace_rupture_auto_cast_prevention_filter",
-                "target_count_value": "subspace_rupture_auto_cast_minimum_target_count"
-              }
-          },
+          "enabled_by_default_behavior": "always",
           "target_definitions": [
             {
               "target_filter": "subspace_rupture_auto_cast_gravity_warhead_target_filter"

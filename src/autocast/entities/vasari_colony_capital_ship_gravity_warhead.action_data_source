@@ -8,8 +8,6 @@
         {
             "unit_types": [
                 "capital_ship",
-                "cruiser",
-                "frigate",
                 "super_capital_ship",
                 "titan"
             ],
@@ -42,8 +40,6 @@
       {
         "unit_types": [
           "capital_ship",
-          "cruiser",
-          "frigate",
           "super_capital_ship",
           "titan"
         ],
