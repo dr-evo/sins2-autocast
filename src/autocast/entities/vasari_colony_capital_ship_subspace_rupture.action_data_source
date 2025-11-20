@@ -32,6 +32,31 @@
         }
     },
     {
+      "target_filter_id": "subspace_rupture_auto_cast_prevention_filter",
+      "target_filter":
+      {
+        "unit_types": [
+          "capital_ship",
+          "cruiser",
+          "frigate",
+          "super_capital_ship",
+          "titan"
+        ],
+        "ownerships": [
+          "enemy"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "is_always_a_threat"
+          },
+          {
+            "constraint_type": "has_buff",
+            "buff": "vasari_colony_capital_ship_subspace_rupture_on_target"
+          }
+        ]
+      }
+    },
+    {
       "target_filter_id": "subspace_rupture_auto_cast_gravity_warhead_target_filter",
       "target_filter":
       {
@@ -96,6 +121,12 @@
       "action_value_id": "subspace_rupture_auto_cast_minimum_target_count",
       "action_value": {
         "values": [5, 5, 5]
+      }
+    },
+    {
+      "action_value_id": "subspace_rupture_auto_cast_prevention_target_count",
+      "action_value": {
+        "values": [1, 1, 1]
       }
     },
     {

@@ -11,4 +11,4 @@ REM /W:0 : Wait time between retries (0 seconds).
 REM /Y : Suppresses prompting to confirm overwriting of existing destination files (though Robocopy usually doesn't prompt anyway).
 REM /PURGE : delete dest files/dirs that no longer exist in source
 
-robocopy "%SourceFolder%" "%DestinationFolder%" /E /R:0 /W:0
+robocopy "%SourceFolder%" "%DestinationFolder%" /E /R:0 /W:0 /PURGE

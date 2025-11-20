@@ -35,30 +35,24 @@
         "auto_cast":
         {
             "enabled_by_default_behavior": "always",
-            "target_definitions": [
-            {
-              "target_filter": "subspace_rupture_auto_cast_gravity_warhead_target_filter",
-              "target_constraint": {
+            "caster_constraint": {
+              "constraint_type": "composite_not",
+              "constraint": {
                 "constraint_type": "has_valid_targets_in_radius",
                 "radius_origin_unit": {
-                  "unit_type": "target"
+                  "unit_type": "current_spawner"
                 },
-                "radius_value": "subspace_rupture_radius_value",
-                "target_filter_id": "subspace_rupture_auto_cast_gravity_warhead_target_filter",
+                "radius_value": "subspace_rupture_range_value",
+                "target_filter_id": "subspace_rupture_auto_cast_prevention_filter",
                 "target_count_value": "subspace_rupture_auto_cast_minimum_target_count"
               }
+          },
+          "target_definitions": [
+            {
+              "target_filter": "subspace_rupture_auto_cast_gravity_warhead_target_filter"
             },
             {
-                "target_filter": "subspace_rupture_auto_cast_target_filter",
-                "target_constraint": {
-                  "constraint_type": "has_valid_targets_in_radius",
-                  "radius_origin_unit": {
-                    "unit_type": "target"
-                  },
-                  "radius_value": "subspace_rupture_radius_value",
-                  "target_filter_id": "subspace_rupture_auto_cast_target_filter",
-                  "target_count_value": "subspace_rupture_auto_cast_minimum_target_count"
-                }
+              "target_filter": "subspace_rupture_auto_cast_target_filter"
             }]
         }
     },

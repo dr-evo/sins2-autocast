@@ -32,18 +32,21 @@
         "firing_angle": 90.0,
         "auto_cast":
         {
-            "target_definitions": [
+          "caster_constraint": {
+            "constraint_type": "composite_not",
+            "constraint": {
+              "constraint_type": "has_valid_targets_in_radius",
+              "radius_origin_unit": {
+                "unit_type": "current_spawner"
+              },
+              "radius_value": "radiation_bomb_range_value",
+              "target_filter_id": "radiation_bomb_auto_cast_prevention_filter",
+              "target_count_value": "radiation_bomb_auto_cast_minimum_target_count"
+            }
+          },
+          "target_definitions": [
             {
-                "target_filter": "radiation_bomb_auto_cast_target_filter",
-                "target_constraint": {
-                  "constraint_type": "has_valid_targets_in_radius",
-                  "radius_origin_unit": {
-                    "unit_type": "target"
-                  },
-                  "radius_value": "radiation_bomb_radius_value",
-                  "target_filter_id": "radiation_bomb_auto_cast_target_filter",
-                  "target_count_value": "radiation_bomb_auto_cast_minimum_target_count"
-                }
+                "target_filter": "radiation_bomb_auto_cast_target_filter"
             }]
         }
     },
