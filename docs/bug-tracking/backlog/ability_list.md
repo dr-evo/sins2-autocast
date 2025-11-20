@@ -5,17 +5,17 @@
   - shield projection - OK - wontfix
   - renew - prioritization - OK - wontfix
 - subjugator 
-  - suppression - prio - fixed, prioritize cruisers, don't target carriers, don't target ships without weapons
-  - nullify - prio - fixed, use only on capitals, don't target ships below 90% antimatter, don't target crippled ships
+  - suppression - prio, filter - fixed, prioritize cruisers, don't target carriers, don't target ships without weapons
+  - nullify - prio, filter - fixed, use only on capitals, don't target ships below 90% antimatter, ignore crippled
 - crusader 
-  - ruthlessness
+  - ruthlessness - aoe targeting - wontfix, can't check if there are ships around current weapon target 
 - radiance
-  - detonate antimatter
-  - animosity - overlap, target priority
-  - cleansing brilliance - aoe prio
+  - detonate antimatter - filter - fixed, target only capitals, ignore crippled, ignore ships below 80% antimatter
+  - animosity - overlap, prio, condition - fixed, targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
+  - cleansing brilliance - aoe, prio - prioritize capitals with frigates in radius, then just caps, ignore frigates
 - progenitor
-  - shield boost - ok
-  - resurrection - ok
+  - shield boost - ok - wontfix
+  - resurrection - ok - wontfix
 - halcyon
   - telekinetic push - overlap
   - anima tempest - prio
