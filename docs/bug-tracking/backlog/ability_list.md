@@ -1,12 +1,12 @@
 # advent
 - acolyte 
-  - refill antimatter - prioritization
+  - refill antimatter - prio - prioritize capitals
 - guardian
-  - shield projection
-  - renew - prioritization
+  - shield projection - OK - wontfix
+  - renew - prioritization - OK - wontfix
 - subjugator 
-  - suppression - prioritization
-  - nullify - prioritization
+  - suppression - prio - fixed, prioritize cruisers, don't target carriers, don't target ships without weapons
+  - nullify - prio - fixed, use only on capitals, don't target ships below 90% antimatter
 - crusader 
   - ruthlessness
 - radiance
