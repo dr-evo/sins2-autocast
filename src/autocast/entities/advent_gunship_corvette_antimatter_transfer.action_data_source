@@ -51,8 +51,14 @@
             "amount_missing_threshold": 75.0
           },
           {
-            "constraint_type": "not_self"
-          }]
+            "constraint_type": "composite_not",
+            "constraint": {
+              "constraint_type": "has_missing_hull",
+              "percentage_missing_threshold": 1,
+              "include_crippled_hull_points": false
+            }
+          }
+        ]
       }
     },
     {
