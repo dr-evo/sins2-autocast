@@ -1,0 +1,108 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "domination_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+                {
+                    "constraint_type": "is_always_a_threat"
+                },
+                {
+                    "constraint_type": "has_weapon"
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "has_missing_hull"
+                    }
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "is_carrier"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "target_filter_id": "domination_auto_cast_low_priority_target_filter",
+        "target_filter": {
+            "unit_types": [
+                "cruiser",
+                "corvette",
+                "frigate"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+                {
+                    "constraint_type": "is_always_a_threat"
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "has_missing_hull"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "target_filter_id": "domination_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "domination_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [150.0, 120.0, 90.0]
+        }
+    },
+    {
+        "action_value_id": "domination_cooldown_time_value",
+        "action_value":
+        {
+            "values": [90.0, 75.0, 60.0],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [-0.1, -0.1, -0.1]
+            }
+        }
+    },
+    {
+        "action_value_id": "domination_max_charge_count_value",
+        "action_value":
+        {
+            "values": [2.0, 4.0, 6.0]
+        }
+    },
+    {
+        "action_value_id": "domination_range_value",
+        "action_value":
+        {
+            "values": [9000.0, 9000.0, 9000.0]
+        }
+    }]
+}
