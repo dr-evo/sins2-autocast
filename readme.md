@@ -36,7 +36,7 @@ Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 # References
 - https://mod.io/g/sins2/m/vanilla-autocast-enhancements
 - https://github.com/dr-evo/sins2-autocast
-- discord
+- https://discord.com/channels/266693357093257216/1441505924530569319/1441505924530569319
 - https://github.com/dr-evo/sins2-autocast/tree/master/docs/bug-tracking
 - https://github.com/dr-evo/sins2-autocast/tree/master/docs/patterns
 
