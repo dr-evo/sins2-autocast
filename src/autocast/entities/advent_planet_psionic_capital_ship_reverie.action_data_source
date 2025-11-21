@@ -38,6 +38,18 @@
                   "constraint_type": "has_missing_shields",
                   "percentage_missing_threshold": 0.95
                 }
+              },
+              {
+                "constraint_type": "is_always_a_threat"
+              },
+              {
+                "constraint_type": "has_weapon"
+              },
+              {
+                "constraint_type": "composite_not",
+                "constraint": {
+                  "constraint_type": "is_carrier"
+                }
               }
             ]
         }
@@ -58,6 +70,9 @@
                   "constraint_type": "has_missing_shields",
                   "percentage_missing_threshold": 0.95
                 }
+              },
+              {
+                "constraint_type": "is_always_a_threat"
               }
             ]
         }

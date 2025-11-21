@@ -21,7 +21,7 @@
   - anima tempest - OK - wontfix
   - shield blessing - overlap - fixed
 - revelation
-  - reverie - prio - prioritize capitals, ignore if no shields, ignore structures (you have quell)
+  - reverie - prio - prioritize capitals, ignore if no shields, ignore structures (you have quell), ignore noncombat and carriers
   - guidance - prio - fixed, ignore subcaps, ignore crippled, ignore ships with less than 20% antimatter
   - quell - OK - wontfix
   - provoke hysteria - OK - wontfix
