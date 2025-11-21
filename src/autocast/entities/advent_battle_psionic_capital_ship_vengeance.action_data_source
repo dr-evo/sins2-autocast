@@ -13,17 +13,26 @@
                 "friendly"
             ],
             "constraints": [
-            {
-                "constraint_type": "is_fully_built"
-            },
-            {
-                "constraint_type": "has_recently_been_damaged"
-            },
-            {
-                "constraint_type": "has_buff",
-                "buff": "advent_battle_capital_ship_animosity_on_self",
-                "include_pending_buffs": true
-            }]
+                {
+                    "constraint_type": "is_fully_built"
+                },
+                {
+                    "constraint_type": "has_recently_been_damaged"
+                },
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_battle_capital_ship_animosity_on_self",
+                    "include_pending_buffs": true
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "has_buff",
+                        "buff": "advent_battle_psionic_capital_ship_vengeance",
+                        "include_pending_buffs": true
+                    }
+                }
+            ]
         }
     },
     {
@@ -50,7 +59,16 @@
                 {
                     "constraint_type": "has_missing_shields",
                     "percentage_missing_threshold": 0.2
-                }]
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "has_buff",
+                        "buff": "advent_battle_psionic_capital_ship_vengeance",
+                        "include_pending_buffs": true
+                    }
+                }
+            ]
         }
     },
     {
@@ -75,6 +93,15 @@
                     "constraint_type": "composite_not",
                     "constraint": {
                         "constraint_type": "has_missing_hull"
+                    }
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "has_buff",
+                        "buff": "advent_battle_psionic_capital_ship_vengeance",
+                        "include_pending_buffs": true
                     }
                 }
             ]

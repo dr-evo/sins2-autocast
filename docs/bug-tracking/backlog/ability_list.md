@@ -27,7 +27,7 @@
   - provoke hysteria - OK - wontfix
 - rapture
   - vertigo - aoe - fixed, at least 5 targets, ignore ships without weapons
-  - vengeance - prio - fixed, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
+  - vengeance - prio, overlap - fixed, don't overwrite existing buff, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
   - domination - prio - fixed, prioritize combat cruisers, don't use if target hull damaged
   - malice - aoe - fixed, cast only if at least 5 targets would be hit
 - oblivia
