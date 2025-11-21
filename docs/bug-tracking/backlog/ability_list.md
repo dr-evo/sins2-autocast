@@ -14,17 +14,17 @@
   - animosity - overlap, prio, condition - fixed, targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
   - cleansing brilliance - aoe, prio - prioritize capitals with frigates in radius, then just caps, ignore frigates
 - progenitor
-  - shield boost - ok - wontfix
-  - resurrection - ok - wontfix
+  - shield boost - OK - wontfix
+  - resurrection - OK - wontfix
 - halcyon
-  - telekinetic push - overlap
-  - anima tempest - prio
+  - telekinetic OK - wontfix, preventing overlap might not be beneficial as there is a direct damage component
+  - anima tempest - OK - wontfix
   - shield blessing - overlap - fixed
 - revelation
-  - reverie - prio
-  - guidance - prio
-  - quell - overlap
-  - provoke hysteria - overlap?
+  - reverie - prio - prioritize capitals, ignore if no shields, ignore structures (you have quell)
+  - guidance - prio - fixed, ignore subcaps, ignore crippled, ignore ships with less than 20% antimatter
+  - quell - OK - wontfix
+  - provoke hysteria - OK - wontfix
 - rapture
   - vertigo - overlap
   - vengeance - prioritization (radiance)
