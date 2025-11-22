@@ -25,7 +25,7 @@ Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 - rapture - malice - cast only if at least 5 targets would be hit
 
 ## TEC
-- flak burst - avoid casting if another flak burst is active in its area
+- items - flak burst - avoid casting if another flak burst is active in its area
 
 ## Vasari
 - jarrasul evacuator - gravity warhead - don't target subcaps

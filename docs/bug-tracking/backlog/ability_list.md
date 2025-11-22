@@ -54,33 +54,33 @@
   - recharge antimatter
   - recharge shields
 - items    
-  - plasma nova - overlap
+  - plasma nova - overlap - fixed
   - antimatter pod - dont use too soon
   - shield booster
-  - harmony circuit - target friendly advent caps only, avoid if buff already present
+  - harmony circuit - filter - fixed, target advent ships only
 
 
 # TEC
 - kalev
   - coil shock - prio
 - hoshiko
-  - repair droids - prio
-  - recharger droid - prio, no useless targets
+  - repair droids - OK - wontfix
+  - recharger droid - filter - fixed, ignore subcaps, ignore crippled
 - javelis
   - breaker missile
 - ogrov
   - torpedo targeting override
 - kol
-  - beam - prio
-  - fusillade - condition
-  - force field - condition
-  - finest hour - condition
+  - beam - OK - wontfix
+  - fusillade - OK - wontfix  TODO consider ignoring e.g. scouts
+  - force field - OK - wontfix  TODO consider triggering only if shields below 90% not to trigger on chip damage
+  - finest hour - OK - wontifix TODO consider ignoring e.g. scouts
 - sova
   - missile battery
   - mass production - overlap
   - rapid manufacturing
 - akkan
-  - inspiring broadcast - overlap - OK
+  - inspiring broadcast - OK - wontfix
   - armistice
 - dunov
   - energy transfer - prio
