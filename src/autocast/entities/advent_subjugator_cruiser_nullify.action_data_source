@@ -54,17 +54,17 @@
                 "percentage_missing_threshold": 1,
                 "include_crippled_hull_points": false
               }
-            },
-            {
-                "constraint_type": "composite_not",
-                "constraint": {
-                  "constraint_type": "has_missing_antimatter",
-                  "percentage_missing_threshold": 0.9
-                }
             }]
         }
     }],
     "action_values": [
+    {
+        "action_value_id": "nullify_autocast_min_target_antimatter_value",
+        "action_value":
+        {
+            "values": [70.0]
+        }
+    },
     {
         "action_value_id": "nullify_antimatter_cost_value",
         "action_value":

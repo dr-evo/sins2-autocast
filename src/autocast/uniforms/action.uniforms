@@ -1,0 +1,16 @@
+{
+    "common_action_values": [
+        {
+            "action_value_id": "uniforms_target_current_antimatter",
+            "action_value":
+            {
+                "transform_type": "per_current_antimatter",
+                "transform_unit":
+                {
+                    "unit_type": "target"
+                },
+                "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+            }
+        }
+    ]
+}

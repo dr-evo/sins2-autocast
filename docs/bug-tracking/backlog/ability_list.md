@@ -62,28 +62,28 @@
 
 # TEC
 - kalev
-  - coil shock - prio
+  - coil shock - prio, aoe
 - hoshiko
   - repair droids - OK - wontfix
   - recharger droid - filter - fixed, ignore subcaps, ignore crippled
 - javelis
-  - breaker missile
+  - breaker missile - OK - wontfix
 - ogrov
-  - torpedo targeting override
+  - torpedo targeting override - OK - wontfix
 - kol
   - beam - OK - wontfix
-  - fusillade - OK - wontfix  TODO consider ignoring e.g. scouts
-  - force field - OK - wontfix  TODO consider triggering only if shields below 90% not to trigger on chip damage
-  - finest hour - OK - wontifix TODO consider ignoring e.g. scouts
+  - fusillade - TODO - consider ignoring e.g. scouts
+  - force field - TODO - consider triggering only if shields below 90% not to trigger on chip damage
+  - finest hour - TODO - consider ignoring e.g. scouts
 - sova
-  - missile battery
-  - mass production - overlap
-  - rapid manufacturing
+  - missile battery - filter - TODO target on itself only if there are valid targets in the area (avoid running in close)
+  - mass production - overlap - TODO do not cast if already present
+  - rapid manufacturing - TODO consider ignoring e.g. scouts
 - akkan
   - inspiring broadcast - OK - wontfix
-  - armistice
+  - armistice - OK - wontfix
 - dunov
-  - energy transfer - prio
+  - energy transfer - OK - wontfix
   - emp - prio
   - magnetic singluarity - overlap , condition
   - overcharge
