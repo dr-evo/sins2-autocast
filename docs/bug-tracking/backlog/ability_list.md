@@ -140,7 +140,7 @@
   - repair cloud - condition
   - replicate forces - prio - fixed, doesn't target non combatants
 - antorak marauder
-  - phase out hull - dont autocast on enemy
+  - phase out hull - filter - fixed, don't target enemies, target own ships below 50% hull without phase restoration
   - sabotage - overlap
   - phase restoration
 - vulkoras desolator
