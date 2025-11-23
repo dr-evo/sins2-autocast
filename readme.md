@@ -6,7 +6,7 @@ Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 
 
 # Features
-- [2025-11-21] work in progress, around 20-30% done
+- 2025-11-21 - 1.0.0 - work in progress, around 20-30% done
 - list of reviewed / pending abilities: https://github.com/dr-evo/sins2-autocast/blob/master/docs/bug-tracking/backlog/ability_list.md
 
 ## Advent
