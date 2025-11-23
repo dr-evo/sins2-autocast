@@ -48,7 +48,7 @@ Example - cast flak burst if you have at least X valid targets in radius
 ```
 
 ### 2.1.2 Use case : targeted abilities in conjunction with target definitions
-Use if there is a condition that applies to all target definitions.
+Use if there is a condition that applies regardless of target.
 
 Example - cast targeted ability only if you have at least 10% missing armor
 ```json
@@ -65,7 +65,7 @@ Example - cast targeted ability only if you have at least 10% missing armor
         "percentage_missing_threshold": 0.1
       }
     },
-    "target_definitions": [...]
+    "target_definitions": []
   }
 }
 ```
@@ -105,8 +105,7 @@ Example - prioritize titans, capital ships, cruisers in that order
 ### 2.2.2 Use case: Target constraints
 Additional constraints can be defined directly at target definition.
 
-Prefer defining constraints as part of filter in `action_data_source` if possible, keep `ability` file as clean as possible.
-( `target_definitions` section should be mostly about target priority, filter details are part of `action_data_source`) 
+Used for conditions on the target that cannot be defined by a filter e.g. checking a condition for units around it or value comparison.
 
 see [filter constraints](#311-filter-constraints)
 
@@ -130,6 +129,28 @@ see [filter constraints](#311-filter-constraints)
       }]
   }
 }
+```
+
+#### Example - check if target has antimatter over certain threshold
+
+```json
+{
+    "auto_cast": {
+        "enabled_by_default_behavior": "always",
+        "target_definitions": [
+            {
+                "target_filter": "nullify_auto_cast_target_filter",
+                "target_constraint": {
+                    "constraint_type": "value_comparison",
+                    "comparison_type": "greater_than_equal_to",
+                    "value_a": "uniforms_target_current_antimatter",
+                    "value_b": "nullify_autocast_min_target_antimatter_value"
+                }
+            }
+        ]
+    }
+}
+
 ```
 
 

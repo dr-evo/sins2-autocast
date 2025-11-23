@@ -1,6 +1,13 @@
 {
     "common_action_values": [
         {
+            "action_value_id": "uniforms_gravity_well_radius_action_value",
+            "action_value":
+            {
+                "values": [30000, 30000, 30000, 30000, 30000]
+            }
+        },
+        {
             "action_value_id": "uniforms_target_current_antimatter",
             "action_value":
             {

@@ -62,7 +62,7 @@
 
 # TEC
 - kalev
-  - coil shock - prio, aoe
+  - coil shock - prio, aoe - fixed, prioritize capitals, have at least 3 chain targets
 - hoshiko
   - repair droids - OK - wontfix
   - recharger droid - filter - fixed, ignore subcaps, ignore crippled
@@ -76,17 +76,17 @@
   - force field - TODO - consider triggering only if shields below 90% not to trigger on chip damage
   - finest hour - TODO - consider ignoring e.g. scouts
 - sova
-  - missile battery - filter - TODO target on itself only if there are valid targets in the area (avoid running in close)
-  - mass production - overlap - TODO do not cast if already present
+  - missile battery - filter - fixed, target on itself  TODO avoid targeting on e.g. scouts
+  - mass production - overlap - fixed,   TODO fix trigger on starbase/takadaran/sova building
   - rapid manufacturing - TODO consider ignoring e.g. scouts
 - akkan
   - inspiring broadcast - OK - wontfix
   - armistice - OK - wontfix
 - dunov
   - energy transfer - OK - wontfix
-  - emp - prio
-  - magnetic singluarity - overlap , condition
-  - overcharge
+  - emp - TODO - don't overlap if already active, check if target has any antimatter left or is crippled
+  - magnetic singluarity - TODO - prioritize swarms of corvettes, strike craft, torpedoes
+  - overcharge - don't trigger on non combatants (e.g. scouts)
 - marza
   - concussion charge
   - precision targeting
