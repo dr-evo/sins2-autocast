@@ -31,35 +31,33 @@
         }
     },
     {
-      "target_filter_id": "antimatter_transfer_auto_cast_high_priority_target_filter",
-      "target_filter":
-      {
-        "unit_types": [
-          "capital_ship",
-          "super_capital_ship",
-          "titan"
-        ],
-        "ownerships": [
-          "friendly"
-        ],
-        "constraints": [
-          {
-            "constraint_type": "is_fully_built"
-          },
-          {
-            "constraint_type": "has_missing_antimatter",
-            "amount_missing_threshold": 75.0
-          },
-          {
-            "constraint_type": "composite_not",
-            "constraint": {
-              "constraint_type": "has_missing_hull",
-              "percentage_missing_threshold": 1,
-              "include_crippled_hull_points": false
-            }
-          }
-        ]
-      }
+        "target_filter_id": "antimatter_transfer_auto_cast_high_priority_target_filter",
+        "target_filter": {
+            "unit_types": [
+                "capital_ship",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "has_missing_antimatter",
+                "amount_missing_threshold": 75.0
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint": {
+                    "constraint_type": "has_missing_hull",
+                    "percentage_missing_threshold": 1,
+                    "include_crippled_hull_points": false
+                }
+            }]
+        }
     },
     {
         "target_filter_id": "antimatter_transfer_auto_cast_low_priority_target_filter",

@@ -68,13 +68,6 @@
         }
     },
     {
-      "action_value_id": "shield_blessing_autocast_prevention_targets",
-      "action_value":
-      {
-        "values": [1]
-      }
-    },
-    {
       "action_value_id": "shield_blessing_autocast_prevention_radius",
       "action_value":
       {

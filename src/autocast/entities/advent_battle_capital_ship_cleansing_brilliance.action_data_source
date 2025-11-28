@@ -2,39 +2,40 @@
     "version": 0,
     "target_filters": [
     {
-      "target_filter_id": "cleansing_brilliance_auto_cast_high_priority_target_filter",
-      "target_filter":
-      {
-        "unit_types": [
-          "capital_ship",
-          "super_capital_ship",
-          "titan"
-        ],
-        "ownerships": [
-          "enemy"
-        ],
-        "constraints": [
-          {
-            "constraint_type": "is_always_a_threat"
-          }]
-      }
+        "target_filter_id": "cleansing_brilliance_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+                {
+                    "constraint_type": "is_always_a_threat"
+                }
+            ]
+        }
     },
     {
-      "target_filter_id": "cleansing_brilliance_auto_cast_aoe_target_filter",
-      "target_filter":
-      {
-        "unit_types": [
-          "frigate",
-          "corvette"
-        ],
-        "ownerships": [
-          "enemy"
-        ],
-        "constraints": [
-          {
-            "constraint_type": "is_always_a_threat"
-          }]
-      }
+        "target_filter_id": "cleansing_brilliance_auto_cast_aoe_target_filter",
+        "target_filter": {
+            "unit_types": [
+                "frigate",
+                "corvette"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+                {
+                    "constraint_type": "is_always_a_threat"
+                }
+            ]
+        }
     },
     {
         "target_filter_id": "cleansing_brilliance_auto_cast_low_priority_target_filter",
@@ -91,11 +92,11 @@
     }],
     "action_values": [
     {
-      "action_value_id": "cleansing_brilliance_autocast_minimum_targets_value",
-      "action_value":
-      {
-        "values": [5]
-      }
+        "action_value_id": "cleansing_brilliance_autocast_minimum_targets_value",
+        "action_value":
+        {
+            "values": [5]
+        }
     },
     {
         "action_value_id": "cleansing_brilliance_antimatter_cost_value",

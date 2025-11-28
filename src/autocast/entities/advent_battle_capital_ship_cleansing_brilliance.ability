@@ -62,19 +62,19 @@
                 }
             },
             {
-              "target_filter": "cleansing_brilliance_auto_cast_high_priority_target_filter"
+                "target_filter": "cleansing_brilliance_auto_cast_high_priority_target_filter"
             },
             {
-              "target_filter": "cleansing_brilliance_auto_cast_low_priority_target_filter",
-              "target_constraint": {
-                "constraint_type": "has_valid_targets_in_radius",
-                "radius_origin_unit": {
-                  "unit_type": "target"
-                },
-                "radius_value": "cleansing_brilliance_radius_value",
-                "target_filter_id": "cleansing_brilliance_spread_target_filter",
-                "target_count_value": "cleansing_brilliance_autocast_minimum_targets_value"
-              }
+                "target_filter": "cleansing_brilliance_auto_cast_low_priority_target_filter",
+                "target_constraint": {
+                    "constraint_type": "has_valid_targets_in_radius",
+                    "radius_origin_unit": {
+                        "unit_type": "target"
+                    },
+                    "radius_value": "cleansing_brilliance_radius_value",
+                    "target_filter_id": "cleansing_brilliance_spread_target_filter",
+                    "target_count_value": "cleansing_brilliance_autocast_minimum_targets_value"
+                }
             }]
         }
     },

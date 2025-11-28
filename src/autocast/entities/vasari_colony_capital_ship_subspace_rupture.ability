@@ -36,12 +36,12 @@
         {
           "enabled_by_default_behavior": "always",
           "target_definitions": [
-            {
+          {
               "target_filter": "subspace_rupture_auto_cast_gravity_warhead_target_filter"
-            },
-            {
+          },
+          {
               "target_filter": "subspace_rupture_auto_cast_target_filter"
-            }]
+          }]
         }
     },
     "gui":

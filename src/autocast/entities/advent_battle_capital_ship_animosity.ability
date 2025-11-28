@@ -78,60 +78,60 @@
         "firing_angle": 360.0,
         "auto_cast":
         {
-          "enabled_by_default_behavior": "always",
-          "caster_constraint": {
-             "constraint_type": "unit_passes_unit_constraint",
-             "unit": {
-               "unit_type": "current_spawner"
-             },
-             "unit_constraint": {
-               "constraint_type": "composite_not",
-               "constraint": {
-                 "constraint_type": "composite_or",
-                 "constraints": [
-                   {
-                     "constraint_type": "has_missing_hull",
-                     "percentage_missing_threshold": 0.5
-                   },
-                   {
-                     "constraint_type": "has_missing_shields",
-                     "percentage_missing_threshold": 0.9
-                   }
-                 ]
-               }
-             }
-          },
-          "target_definitions": [
-            {
-              "target_filter": "animosity_auto_cast_target_filter",
-              "target_constraint": {
-                "constraint_type": "composite_and",
-                "constraints": [
-                  {
-                    "constraint_type": "has_valid_targets_in_radius",
-                    "radius_origin_unit": {
-                      "unit_type": "target"
-                    },
-                    "radius_value": "animosity_radius_value",
-                    "target_filter_id": "animosity_auto_cast_target_filter",
-                    "target_count_value": "animosity_autocast_minimum_target_count"
-                  },
-                  {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
                     "constraint_type": "composite_not",
                     "constraint": {
-                      "constraint_type": "has_valid_targets_in_radius",
-                      "radius_origin_unit": {
-                        "unit_type": "target"
-                      },
-                      "radius_value": "animosity_radius_value",
-                      "target_filter_id": "animosity_auto_cast_prevention_target_filter",
-                      "target_count_value": "animosity_autocast_prevention_target_count"
+                        "constraint_type": "composite_or",
+                        "constraints": [
+                            {
+                                "constraint_type": "has_missing_hull",
+                                "percentage_missing_threshold": 0.5
+                            },
+                            {
+                                "constraint_type": "has_missing_shields",
+                                "percentage_missing_threshold": 0.9
+                            }
+                        ]
                     }
+                }
+          },
+          "target_definitions": [
+              {
+                  "target_filter": "animosity_auto_cast_target_filter",
+                  "target_constraint": {
+                      "constraint_type": "composite_and",
+                      "constraints": [
+                          {
+                              "constraint_type": "has_valid_targets_in_radius",
+                              "radius_origin_unit": {
+                                  "unit_type": "target"
+                              },
+                              "radius_value": "animosity_radius_value",
+                              "target_filter_id": "animosity_auto_cast_target_filter",
+                              "target_count_value": "animosity_autocast_minimum_target_count"
+                          },
+                          {
+                              "constraint_type": "composite_not",
+                              "constraint": {
+                                  "constraint_type": "has_valid_targets_in_radius",
+                                  "radius_origin_unit": {
+                                      "unit_type": "target"
+                                  },
+                                  "radius_value": "animosity_radius_value",
+                                  "target_filter_id": "animosity_auto_cast_prevention_target_filter",
+                                  "target_count_value": "fixed_one"
+                              }
+                          }
+                      ]
                   }
-                ]
-
               }
-            }]
+          ]
         }
     },
     "gui":

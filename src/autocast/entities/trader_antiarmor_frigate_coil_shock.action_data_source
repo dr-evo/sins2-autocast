@@ -36,12 +36,12 @@
                 "enemy"
             ],
             "constraints": [
-                {
-                    "constraint_type": "has_shields"
-                },
-                {
-                    "constraint_type": "is_always_a_threat"
-                }]
+            {
+                "constraint_type": "has_shields"
+            },
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
         }
     },
     {

@@ -47,12 +47,11 @@
                 "friendly"
             ],
             "constraints": [
-                {
-                    "constraint_type": "has_buff",
-                    "buff": "trader_flak_burst_unit_item",
-                    "include_pending_buffs": true
-                }
-            ]
+            {
+                "constraint_type": "has_buff",
+                "buff": "trader_flak_burst_unit_item",
+                "include_pending_buffs": true
+            }]
         }
     }
     ],

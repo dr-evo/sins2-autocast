@@ -34,31 +34,31 @@
         }
     },
     {
-      "target_filter_id": "animosity_auto_cast_prevention_target_filter",
-      "target_filter":
-      {
-        "unit_types": [
-          "corvette",
-          "cruiser",
-          "frigate",
-          "structure"
-        ],
-        "ownerships": [
-          "enemy"
-        ],
-        "constraints": [
-          {
-            "constraint_type": "is_always_a_threat"
-          },
-          {
-            "constraint_type": "has_weapon"
-          },
-          {
-            "constraint_type": "has_buff",
-            "buff": "advent_battle_capital_ship_animosity_on_target",
-            "include_pending_buffs": true
-          }]
-      }
+        "target_filter_id": "animosity_auto_cast_prevention_target_filter",
+        "target_filter": {
+            "unit_types": [
+                "corvette",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+                {
+                    "constraint_type": "is_always_a_threat"
+                },
+                {
+                    "constraint_type": "has_weapon"
+                },
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_battle_capital_ship_animosity_on_target",
+                    "include_pending_buffs": true
+                }
+            ]
+        }
     },
     {
         "target_filter_id": "animosity_target_filter",
@@ -81,18 +81,11 @@
     }],
     "action_values": [
     {
-      "action_value_id": "animosity_autocast_minimum_target_count",
-      "action_value":
-      {
-        "values": [5, 5, 5]
-      }
-    },
-    {
-      "action_value_id": "animosity_autocast_prevention_target_count",
-      "action_value":
-      {
-        "values": [1, 1, 1]
-      }
+        "action_value_id": "animosity_autocast_minimum_target_count_value",
+        "action_value":
+        {
+            "values": [5, 5, 5]
+        }
     },
     {
         "action_value_id": "animosity_antimatter_cost_value",

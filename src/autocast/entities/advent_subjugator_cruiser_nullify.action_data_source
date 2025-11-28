@@ -48,12 +48,12 @@
                 "constraint_type": "has_antimatter"
             },
             {
-              "constraint_type": "composite_not",
-              "constraint": {
-                "constraint_type": "has_missing_hull",
-                "percentage_missing_threshold": 1,
-                "include_crippled_hull_points": false
-              }
+                "constraint_type": "composite_not",
+                "constraint": {
+                    "constraint_type": "has_missing_hull",
+                    "percentage_missing_threshold": 1,
+                    "include_crippled_hull_points": false
+                }
             }]
         }
     }],

@@ -26,35 +26,30 @@
         "auto_cast":
         {
             "enabled_by_default_behavior": "always",
-            "caster_constraint":
-            {
-              "constraint_type": "composite_and",
-              "constraints": [
+            "caster_constraint": {
+                "constraint_type": "composite_and",
+                "constraints": [
                 {
-                  "constraint_type": "unit_passes_unit_constraint",
-                  "unit":
-                  {
-                    "unit_type": "current_spawner"
-                  },
-                  "unit_constraint":
-                  {
-                    "constraint_type": "weapon_has_target"
-                  }
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint": {
+                        "constraint_type": "weapon_has_target"
+                    }
                 },
                 {
-                  "constraint_type": "composite_not",
-                  "constraint": {
-                    "constraint_type": "has_valid_targets_in_radius",
-                    "radius_origin_unit":
-                    {
-                      "unit_type": "current_spawner"
-                    },
-                    "target_filter_id": "shield_blessing_auto_cast_prevention_target_filter",
-                    "radius_value": "shield_blessing_autocast_prevention_radius",
-                    "target_count_value": "shield_blessing_autocast_prevention_targets"
-                  }
-                }
-              ]
+                    "constraint_type": "composite_not",
+                    "constraint": {
+                        "constraint_type": "has_valid_targets_in_radius",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "target_filter_id": "shield_blessing_auto_cast_prevention_target_filter",
+                        "radius_value": "uniforms_gravity_well_radius_action_value",
+                        "target_count_value": "fixed_one"
+                    }
+                }]
             }
         }
     },

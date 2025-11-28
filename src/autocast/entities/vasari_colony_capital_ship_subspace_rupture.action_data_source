@@ -35,33 +35,32 @@
       "target_filter_id": "subspace_rupture_auto_cast_gravity_warhead_target_filter",
       "target_filter":
       {
-        "unit_types": [
-          "capital_ship",
-          "cruiser",
-          "frigate",
-          "super_capital_ship",
-          "titan"
-        ],
-        "ownerships": [
-          "enemy"
-        ],
-        "constraints": [
+          "unit_types": [
+              "capital_ship",
+              "cruiser",
+              "frigate",
+              "super_capital_ship",
+              "titan"
+          ],
+          "ownerships": [
+              "enemy"
+          ],
+          "constraints": [
           {
-            "constraint_type": "is_always_a_threat"
+              "constraint_type": "is_always_a_threat"
           },
           {
-            "constraint_type": "composite_not",
-            "constraint":
-            {
+              "constraint_type": "composite_not",
+              "constraint": {
+                  "constraint_type": "has_buff",
+                  "buff": "vasari_colony_capital_ship_subspace_rupture_on_target",
+                  "include_pending_buffs": true
+              }
+          },
+          {
               "constraint_type": "has_buff",
-              "buff": "vasari_colony_capital_ship_subspace_rupture_on_target",
+              "buff": "vasari_colony_capital_ship_gravity_warhead_on_target",
               "include_pending_buffs": true
-            }
-          },
-          {
-            "constraint_type": "has_buff",
-            "buff": "vasari_colony_capital_ship_gravity_warhead_on_target",
-            "include_pending_buffs": true
           }]
       }
     },
@@ -93,16 +92,11 @@
     }],
     "action_values": [
     {
-      "action_value_id": "subspace_rupture_auto_cast_minimum_target_count",
-      "action_value": {
-        "values": [5, 5, 5]
-      }
-    },
-    {
-      "action_value_id": "subspace_rupture_auto_cast_prevention_target_count",
-      "action_value": {
-        "values": [1, 1, 1]
-      }
+        "action_value_id": "subspace_rupture_auto_cast_minimum_target_count",
+        "action_value":
+        {
+            "values": [5, 5, 5]
+        }
     },
     {
         "action_value_id": "subspace_rupture_antimatter_cost_value",

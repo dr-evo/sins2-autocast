@@ -12,18 +12,17 @@
             "ownerships": [
                 "friendly"],
             "constraints": [
-              {
+            {
                 "constraint_type": "composite_and",
                 "constraints": [
-                  {
-                    "constraint_type": "is_always_a_threat"
-                  },
-                  {
-                    "constraint_type": "has_weapon"
-                  }
+                    {
+                        "constraint_type": "is_always_a_threat"
+                    },
+                    {
+                        "constraint_type": "has_weapon"
+                    }
                 ]
-              }
-            ]
+            }]
 
         }
 

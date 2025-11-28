@@ -12,14 +12,13 @@
             "ownerships": [
                 "enemy"],
             "constraints": [
-              {
+            {
                 "constraint_type": "composite_not",
                 "constraint": {
-                  "constraint_type": "has_missing_shields",
-                  "percentage_missing_threshold": 0.95
+                    "constraint_type": "has_missing_shields",
+                    "percentage_missing_threshold": 0.95
                 }
-              }
-            ]
+            }]
         }
     },
     {
@@ -27,31 +26,31 @@
         "target_filter":
         {
             "unit_types": [
-              "cruiser"
+                "cruiser"
             ],
             "ownerships": [
-              "enemy"],
+                "enemy"
+            ],
             "constraints": [
-              {
+            {
                 "constraint_type": "composite_not",
                 "constraint": {
-                  "constraint_type": "has_missing_shields",
-                  "percentage_missing_threshold": 0.95
+                    "constraint_type": "has_missing_shields",
+                    "percentage_missing_threshold": 0.95
                 }
-              },
-              {
+            },
+            {
                 "constraint_type": "is_always_a_threat"
-              },
-              {
+            },
+            {
                 "constraint_type": "has_weapon"
-              },
-              {
+            },
+            {
                 "constraint_type": "composite_not",
                 "constraint": {
-                  "constraint_type": "is_carrier"
+                    "constraint_type": "is_carrier"
                 }
-              }
-            ]
+            }]
         }
     },
     {
@@ -59,22 +58,22 @@
         "target_filter":
         {
             "unit_types": [
-              "frigate"
+                "frigate"
             ],
             "ownerships": [
-              "enemy"],
+                "enemy"
+            ],
             "constraints": [
-              {
+            {
                 "constraint_type": "composite_not",
                 "constraint": {
-                  "constraint_type": "has_missing_shields",
-                  "percentage_missing_threshold": 0.95
+                    "constraint_type": "has_missing_shields",
+                    "percentage_missing_threshold": 0.95
                 }
-              },
-              {
+            },
+            {
                 "constraint_type": "is_always_a_threat"
-              }
-            ]
+            }]
         }
     },
     {
