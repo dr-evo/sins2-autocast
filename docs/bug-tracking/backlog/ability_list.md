@@ -86,8 +86,8 @@
   - armistice - OK - wontfix
 - dunov
   - energy transfer - OK - wontfix
-  - emp - TODO - don't overlap if already active, check if target has any antimatter left or is crippled
-  - magnetic singluarity - TODO - prioritize swarms of corvettes, strike craft, torpedoes
+  - emp - filter - fixed, check if target has sufficient antimatter, do not target crippled
+  - magnetic singluarity - filter - fixed, prioritize swarms of corvettes, strike craft, torpedoes
   - overcharge - don't trigger on non combatants (e.g. scouts), don't trigger if low on antimatter
 - marza
   - concussion charge
