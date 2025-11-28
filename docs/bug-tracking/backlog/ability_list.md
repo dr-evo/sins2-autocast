@@ -58,6 +58,8 @@
   - antimatter pod - dont use too soon
   - shield booster
   - harmony circuit - filter - fixed, target advent ships only
+  - hull thingy
+  - shield thingy
 
 
 # TEC
@@ -86,7 +88,7 @@
   - energy transfer - OK - wontfix
   - emp - TODO - don't overlap if already active, check if target has any antimatter left or is crippled
   - magnetic singluarity - TODO - prioritize swarms of corvettes, strike craft, torpedoes
-  - overcharge - don't trigger on non combatants (e.g. scouts)
+  - overcharge - don't trigger on non combatants (e.g. scouts), don't trigger if low on antimatter
 - marza
   - concussion charge
   - precision targeting
@@ -119,6 +121,10 @@
 - items    
   - rad bomb - aoe - wontfix, can't be fixed on position targeted abilities
   - flak - overlap - fixed
+  - autorepair
+  - autoloader
+  - hull repair
+  - volatile accelerants
 
 # vasari
 - kanrak assailant
@@ -166,7 +172,11 @@
 - orkulus
   - debris reintegration - autocast - fixed, casts if missing armor and was damaged recently
 - items
+  - repair nanites
+  - recharger nanites
   - attack nanites
+  - regenerative armor
+  - phase shield
 
 
 # other
