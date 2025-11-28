@@ -86,7 +86,7 @@
   - armistice - OK - wontfix
 - dunov
   - energy transfer - OK - wontfix
-  - emp - filter - fixed, check if target has sufficient antimatter, do not target crippled
+  - emp - filter - fixed, only target capitals, check if target has sufficient antimatter, do not target crippled
   - magnetic singluarity - filter - fixed, prioritize swarms of corvettes, strike craft, torpedoes
   - overcharge - don't trigger on non combatants (e.g. scouts), don't trigger if low on antimatter
 - marza

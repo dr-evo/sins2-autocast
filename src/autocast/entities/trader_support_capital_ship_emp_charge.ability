@@ -65,17 +65,7 @@
             "enabled_by_default_behavior": "always",
             "target_definitions": [
             {
-                "target_filter": "emp_charge_auto_cast_high_priority_target_filter",
-                "target_constraint":
-                {
-                    "constraint_type": "value_comparison",
-                    "comparison_type": "greater_than_equal_to",
-                    "value_a": "uniforms_target_current_antimatter",
-                    "value_b": "empowered_antimatter_remove_value"
-                }
-            },
-            {
-                "target_filter": "emp_charge_auto_cast_low_priority_target_filter",
+                "target_filter": "emp_charge_auto_cast_target_filter",
                 "target_constraint":
                 {
                     "constraint_type": "value_comparison",
