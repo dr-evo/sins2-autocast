@@ -66,15 +66,7 @@
                 "ratio_values": [0.2]
             }
         }
-    },
-    {
-      "action_value_id": "shield_blessing_autocast_prevention_radius",
-      "action_value":
-      {
-        "values": [20000]
-      }
-    }
-    ],
+    }],
     "buff_unit_modifiers": [
     {
         "buff_unit_modifier_id": "shield_blessing_shield_points_modifier",

@@ -45,7 +45,7 @@
                         },
                         "target_filter_id": "flak_burst_auto_cast_prevention_target",
                         "radius_value": "auto_cast_radius",
-                        "target_count_value": "auto_cast_prevention_target_count"
+                        "target_count_value": "fixed_one"
                     }
                 }]
             }

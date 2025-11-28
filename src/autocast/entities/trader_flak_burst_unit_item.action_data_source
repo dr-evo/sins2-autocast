@@ -64,12 +64,6 @@
         }
     },
     {
-        "action_value_id": "auto_cast_prevention_target_count",
-        "action_value": {
-            "values": [1,1,1]
-        }
-    },
-    {
         "action_value_id": "auto_cast_radius",
         "action_value":
         {
