@@ -10,7 +10,7 @@
 - crusader 
   - ruthlessness - aoe targeting - wontfix, can't check if there are ships around current weapon target 
 - radiance
-  - detonate antimatter - filter - fixed, target only capitals, ignore crippled, ignore ships below 80% antimatter
+  - detonate antimatter - filter, overlap - fixed, target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
   - animosity - overlap, prio, condition - fixed, targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
   - cleansing brilliance - aoe, prio - prioritize capitals with frigates in radius, then just caps, ignore frigates
 - progenitor

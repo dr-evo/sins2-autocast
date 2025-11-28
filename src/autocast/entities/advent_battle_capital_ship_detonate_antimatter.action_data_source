@@ -30,8 +30,9 @@
             {
                 "constraint_type": "composite_not",
                 "constraint": {
-                    "constraint_type": "has_missing_antimatter",
-                    "percentage_missing_threshold": 0.8
+                    "constraint_type": "has_buff",
+                    "buff": "advent_battle_capital_ship_detonate_antimatter",
+                    "include_pending_buffs": true
                 }
             }]
         }
@@ -59,6 +60,13 @@
         }
     }],
     "action_values": [
+    {
+        "action_value_id": "detonate_antimatter_auto_cast_minimum_antimatter_value",
+        "action_value":
+        {
+            "values": [60.0, 110.0, 160.0]
+        }
+    },
     {
         "action_value_id": "detonate_antimatter_antimatter_cost_value",
         "action_value":
