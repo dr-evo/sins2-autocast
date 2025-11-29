@@ -1,35 +1,35 @@
 # advent
 - acolyte 
-  - refill antimatter - prio - prioritize capitals, ignore crippled
+  - refill antimatter - FIXED (priority) - prioritize capitals, ignore crippled
 - guardian
-  - shield projection - OK - wontfix
-  - renew - prioritization - OK - wontfix
+  - shield projection - WONTFIX (no issues)
+  - renew - prioritization - WONTFIX (no issues)
 - subjugator 
-  - suppression - prio, filter - fixed, prioritize cruisers, don't target carriers, don't target ships without weapons
-  - nullify - prio, filter - fixed, use only on capitals, don't target ships below 90% antimatter, ignore crippled
+  - suppression - FIXED (priority, filter) - prioritize cruisers, don't target carriers, don't target ships without weapons
+  - nullify - FIXED (priority, filter) - use only on capitals, don't target ships below 70 antimatter, ignore crippled
 - crusader 
-  - ruthlessness - aoe targeting - wontfix, can't check if there are ships around current weapon target 
+  - ruthlessness - WONTFIX (aoe) - can't check if there are ships around current weapon target 
 - radiance
-  - detonate antimatter - filter, overlap - fixed, target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
-  - animosity - overlap, prio, condition - fixed, targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
-  - cleansing brilliance - aoe, prio - prioritize capitals with frigates in radius, then just caps, ignore frigates
+  - detonate antimatter - FIXED (filter, overlap) - target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
+  - animosity - FIXED (overlap, priority, trigger) - targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
+  - cleansing brilliance - FIXED (aoe, priority) - prioritize capitals with frigates in radius, then just caps, ignore frigates
 - progenitor
-  - shield boost - OK - wontfix
-  - resurrection - OK - wontfix
+  - shield boost - WONTFIX (no issues)
+  - resurrection - WONTFIX (no issues)
 - halcyon
-  - telekinetic OK - wontfix, preventing overlap might not be beneficial as there is a direct damage component
-  - anima tempest - OK - wontfix
-  - shield blessing - overlap - fixed
+  - telekinetic - WONTFIX (overlap) - preventing overlap might not be beneficial as there is a direct damage component and cooldown is short
+  - anima tempest - WONTFIX (no issues) 
+  - shield blessing - FIXED (overlap) 
 - revelation
-  - reverie - prio - prioritize capitals, ignore if no shields, ignore structures (you have quell), ignore noncombat and carriers
-  - guidance - prio - fixed, ignore subcaps, ignore crippled, ignore ships with less than 20% antimatter
-  - quell - OK - wontfix
-  - provoke hysteria - OK - wontfix
+  - reverie - FIXED (priority) - prioritize capitals, ignore if no shields, ignore structures (you have quell), ignore noncombat and carriers
+  - guidance - FIXED (priority) - ignore subcaps, ignore crippled, ignore ships with less than 20% antimatter
+  - quell - WONTFIX (no issues) - TODO : consider overlap prevention
+  - provoke hysteria - WONTFIX (no issues) - TODO : consider overlap prevention
 - rapture
-  - vertigo - aoe - fixed, at least 5 targets, ignore ships without weapons
-  - vengeance - prio, overlap - fixed, don't overwrite existing buff, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
-  - domination - prio - fixed, prioritize combat cruisers, don't use if target hull damaged
-  - malice - aoe - fixed, cast only if at least 5 targets would be hit
+  - vertigo - FIXED (aoe) - at least 5 targets, ignore ships without weapons
+  - vengeance - FIXED (priority, overlap) - don't overwrite existing buff, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
+  - domination - FIXED (prio) - prioritize combat cruisers, don't use if target hull damaged
+  - malice - FIXED (aoe, overlap) - cast only if at least 5 targets would be hit
 - oblivia
   - psikinetic blast
   - subsume energy
@@ -54,45 +54,45 @@
   - recharge antimatter
   - recharge shields
 - items    
-  - plasma nova - overlap - fixed
+  - plasma nova - overlap - FIXED
   - antimatter pod - dont use too soon
   - shield booster
-  - harmony circuit - filter - fixed, target advent ships only
+  - harmony circuit - filter - FIXED, target advent ships only
   - hull thingy
   - shield thingy
 
 
 # TEC
 - kalev
-  - coil shock - prio, aoe - fixed, prioritize capitals, have at least 3 chain targets
+  - coil shock - FIXED (priority, aoe) - prioritize capitals, have at least 3 chain targets
 - hoshiko
-  - repair droids - OK - wontfix
-  - recharger droid - filter - fixed, ignore subcaps, ignore crippled
+  - repair droids - WONTFIX (no issues)
+  - recharger droid - filter - FIXED, ignore subcaps, ignore crippled
 - javelis
-  - breaker missile - OK - wontfix
+  - breaker missile - WONTFIX (no issues)
 - ogrov
-  - torpedo targeting override - OK - wontfix
+  - torpedo targeting override - WONTFIX (no issues)
 - kol
-  - beam - OK - wontfix
+  - beam - WONTFIX (no issues)
   - fusillade - TODO - consider ignoring e.g. scouts
   - force field - TODO - consider triggering only if shields below 90% not to trigger on chip damage
   - finest hour - TODO - consider ignoring e.g. scouts
 - sova
-  - missile battery - filter - fixed, target on itself  TODO avoid targeting on e.g. scouts
-  - mass production - overlap - fixed,   TODO fix trigger on starbase/takadaran/sova building
+  - missile battery - FIXED (filter) - target on itself  TODO avoid targeting on e.g. scouts
+  - mass production - FIXED (overlap) - TODO fix trigger on starbase/takadaran/sova building
   - rapid manufacturing - TODO consider ignoring e.g. scouts
 - akkan
-  - inspiring broadcast - OK - wontfix
-  - armistice - OK - wontfix
+  - inspiring broadcast - WONTFIX (no issues)
+  - armistice - WONTFIX (no issues)
 - dunov
-  - energy transfer - OK - wontfix
-  - emp - filter - fixed, only target capitals, check if target has sufficient antimatter, do not target crippled
-  - magnetic singluarity - filter - fixed, prioritize swarms of corvettes, strike craft, torpedoes
-  - overcharge - filter - fixed, don't trigger if low on antimatter, trigger if threats nearby or damaged
+  - energy transfer - WONTFIX (no issues)
+  - emp - FIXED (filter) - only target capitals, check if target has sufficient antimatter, ignore crippled
+  - magnetic singluarity - FIXED (filter) - prioritize swarms of corvettes, strike craft, torpedoes
+  - overcharge - FIXED (filter) - don't trigger if low on antimatter, trigger if threats nearby or damaged
 - marza
   - concussion charge
   - precision targeting
-  - raze planet
+  - raze planet - WONTFIX (no issues)
   - missile barrage
 - takadaran
   - coordinate attack
@@ -119,8 +119,8 @@
 - novalith
   - fire novalith
 - items    
-  - rad bomb - aoe - wontfix, can't be fixed on position targeted abilities
-  - flak - overlap - fixed
+  - rad bomb - WONTFIX (aoe) - can't be fixed on position targeted abilities
+  - flak - FIXED (overlap)
   - autorepair
   - autoloader
   - hull repair
@@ -137,17 +137,17 @@
   - jam weapons - overlap
   - volatile nanites
 - jarrasul evacuator
-  - gravity warhead - prio - fixed, don't target subcaps 
+  - gravity warhead - FIXED (prio) - don't target subcaps, prioritize affected by rupture
   - subspace rupture 
-    - aoe - wontfix, can't be fixed on position targeted abilities
-    - prio - fixed - prioritizes targets with gravity warhead
+    - aoe - WONTFIX, can't be fixed on position targeted abilities
+    - prio - FIXED - prioritizes targets with gravity warhead
   - drain planet
 - skirantra carrier
   - nanite armor - prio
   - repair cloud - condition
-  - replicate forces - prio - fixed, doesn't target non combatants
+  - replicate forces - FIXED (priority, filter) - doesn't target non combatants
 - antorak marauder
-  - phase out hull - filter - fixed, don't target enemies, target own ships below 50% hull without phase restoration
+  - phase out hull - FIXED (filter) - don't target enemies, target own recently damaged ships below 50% hull without phase restoration
   - sabotage - overlap
   - phase restoration
 - vulkoras desolator
@@ -171,7 +171,7 @@
   - micro phase jump
   - the maw
 - orkulus
-  - debris reintegration - autocast - fixed, casts if missing armor and was damaged recently
+  - debris reintegration - FIXED (autocast) - casts if missing armor and was damaged recently
 - items
   - repair nanites
   - recharger nanites
