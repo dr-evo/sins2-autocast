@@ -13,6 +13,7 @@
   - detonate antimatter - FIXED (filter, overlap) - target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
   - animosity - FIXED (overlap, priority, trigger) - targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
   - cleansing brilliance - FIXED (aoe, priority) - prioritize capitals with frigates in radius, then just caps, ignore frigates
+    - TODO review overlap necessity
 - progenitor
   - shield boost - WONTFIX (no issues)
   - resurrection - WONTFIX (no issues)
@@ -90,7 +91,7 @@
   - magnetic singluarity - FIXED (filter) - prioritize swarms of corvettes, strike craft, torpedoes
   - overcharge - FIXED (filter) - don't trigger if low on antimatter, trigger if threats nearby or damaged
 - marza
-  - concussion charge - TODO (aoe, priority, trigger) - trigger only if weapon has target
+  - concussion charge - FIXED (aoe, priority, trigger) - trigger only if weapon has target, prioritize caps with frigates/corvettes around, then just caps, then clumps of corvettes/frigates
   - precision targeting - TODO (aoe, trigger) - trigger only if weapon has target
   - raze planet - WONTFIX (no issues)
   - missile barrage - TODO (aoe, priority, trigger)
