@@ -19,6 +19,15 @@
             "constraints": [
             {
                 "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_battle_psionic_capital_ship_malice_on_target",
+                    "include_pending_buffs": true
+                }
             }]
         }
     },
