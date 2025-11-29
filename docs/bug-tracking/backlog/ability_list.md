@@ -78,9 +78,9 @@
   - force field - FIXED (trigger) - trigger only if at least 10% shields lost and recently damaged
   - finest hour - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
 - sova
-  - missile battery - FIXED (filter) - target on itself  TODO avoid targeting on e.g. scouts
-  - mass production - FIXED (overlap) - TODO fix trigger on starbase/takadaran/sova building
-  - rapid manufacturing - TODO consider ignoring e.g. scouts
+  - missile battery - FIXED (filter) - target on itself  , avoid targeting on e.g. scouts
+  - mass production - FIXED (overlap, filter) - don't overlap casts, fix trigger on starbase/takadaran/sova building
+  - rapid manufacturing - FIXED (trigger) - avoid targeting on e.g. scouts
 - akkan
   - inspiring broadcast - WONTFIX (no issues)
   - armistice - WONTFIX (no issues)
@@ -121,7 +121,7 @@
 - items    
   - rad bomb 
     - WONTFIX (aoe) - can't be fixed on position targeted abilities
-    - TODO (trigger) - only use if weapon has target
+    - FIXED (trigger) - only use if weapon has target (avoid breaking formation)
   - flak - FIXED (overlap)
   - autorepair
   - autoloader

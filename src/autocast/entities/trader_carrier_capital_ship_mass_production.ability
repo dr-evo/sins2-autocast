@@ -28,39 +28,56 @@
             "enabled_by_default_behavior": "always",
             "caster_constraint":
             {
-                "constraint_type": "unit_passes_unit_constraint",
-                "unit":
-                {
-                    "unit_type": "current_spawner",
-                    "redirection": "current_gravity_well_primary_fixture"
-                },
-                "unit_constraint":
-                {
-                    "constraint_type": "composite_and",
-                    "constraints": [
+                "constraint_type": "composite_or",
+                "constraints": [
                     {
-                        "constraint_type": "composite_not",
-                        "constraint": {
-                            "constraint_type": "has_buff",
-                            "buff": "trader_carrier_capital_ship_mass_production_on_planet",
-                            "include_pending_buffs": true
+                        "constraint_type": "unit_passes_unit_constraint",
+                        "unit":
+                        {
+                            "unit_type": "current_spawner",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "unit_constraint":
+                        {
+                            "constraint_type": "composite_and",
+                            "constraints": [
+                            {
+                                "constraint_type": "composite_not",
+                                "constraint": {
+                                    "constraint_type": "has_buff",
+                                    "buff": "trader_carrier_capital_ship_mass_production_on_planet",
+                                    "include_pending_buffs": true
+                                }
+                            },
+                            {
+                                "constraint_type": "is_friendly"
+                            },
+                            {
+                                "constraint_type": "composite_or",
+                                "constraints": [
+                                {
+                                    "constraint_type": "is_building_structures"
+                                },
+                                {
+                                    "constraint_type": "is_unit_factory_building_units"
+                                }]
+                            }]
                         }
                     },
                     {
-                        "constraint_type": "is_friendly"
-                    },
-                    {
-                        "constraint_type": "composite_or",
-                        "constraints": [
-                        {
-                            "constraint_type": "is_building_structures"
+                        "constraint_type": "has_valid_targets_in_radius",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
                         },
-                        {
-                            "constraint_type": "is_unit_factory_building_units"
-                        }]
-                    }]
-                }
+                        "radius_value": "uniforms_gravity_well_radius_action_value",
+                        "target_count_value": "fixed_one",
+                        "target_filter_id": "mass_production_autocast_factory_target_filter"
+                    }
+
+                ]
             }
+
+
         }
     },
     "gui":
