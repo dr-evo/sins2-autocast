@@ -114,7 +114,7 @@
                               },
                               "radius_value": "animosity_radius_value",
                               "target_filter_id": "animosity_auto_cast_target_filter",
-                              "target_count_value": "animosity_autocast_minimum_target_count"
+                              "target_count_value": "animosity_autocast_minimum_target_count_value"
                           },
                           {
                               "constraint_type": "composite_not",

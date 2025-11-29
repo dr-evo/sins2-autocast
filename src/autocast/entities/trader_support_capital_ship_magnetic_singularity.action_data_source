@@ -18,7 +18,7 @@
                     "constraint_type": "composite_not",
                     "constraint": {
                         "constraint_type": "has_buff",
-                        "buff": "trader_support_capital_ship_magnetic_singularity_buff_on_target",
+                        "buff": "trader_support_capital_ship_magnetic_singularity_on_target",
                         "include_pending_buffs": true
                     }
                 }

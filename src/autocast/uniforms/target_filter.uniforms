@@ -1,26 +1,27 @@
 {
     "common_target_filters": [
+    {
+        "target_filter_id": "uniforms_common_threat",
+        "target_filter":
         {
-            "target_filter_id": "uniforms_common_threat",
-            "target_filter":
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
             {
-                "unit_types": [
-                    "capital_ship",
-                    "corvette",
-                    "cruiser",
-                    "frigate",
-                    "starbase",
-                    "structure",
-                    "super_capital_ship",
-                    "titan"
-                ],
-                "ownerships": [
-                    "enemy"
-                ],
-                "constraints": [
-                {
-                    "constraint_type": "is_always_a_threat"
-                }]
-            }
-        }]
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    }],
+    "in_phase_space_mutation": "in_phase_space"
 }
