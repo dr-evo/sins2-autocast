@@ -67,16 +67,16 @@
   - coil shock - FIXED (priority, aoe) - prioritize capitals, have at least 3 chain targets
 - hoshiko
   - repair droids - WONTFIX (no issues)
-  - recharger droid - filter - FIXED, ignore subcaps, ignore crippled
+  - recharger droid - FIXED (filter) - ignore subcaps, ignore crippled   TODO : add subcaps as low priority if there is nothing to repair or no caps to recharge
 - javelis
   - breaker missile - WONTFIX (no issues)
 - ogrov
   - torpedo targeting override - WONTFIX (no issues)
 - kol
   - beam - WONTFIX (no issues)
-  - fusillade - TODO - consider ignoring e.g. scouts
-  - force field - TODO - consider triggering only if shields below 90% not to trigger on chip damage
-  - finest hour - TODO - consider ignoring e.g. scouts
+  - fusillade - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
+  - force field - FIXED (trigger) - trigger only if at least 10% shields lost and recently damaged
+  - finest hour - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
 - sova
   - missile battery - FIXED (filter) - target on itself  TODO avoid targeting on e.g. scouts
   - mass production - FIXED (overlap) - TODO fix trigger on starbase/takadaran/sova building
@@ -90,10 +90,10 @@
   - magnetic singluarity - FIXED (filter) - prioritize swarms of corvettes, strike craft, torpedoes
   - overcharge - FIXED (filter) - don't trigger if low on antimatter, trigger if threats nearby or damaged
 - marza
-  - concussion charge
-  - precision targeting
+  - concussion charge - TODO (aoe, priority, trigger) - trigger only if weapon has target
+  - precision targeting - TODO (aoe, trigger) - trigger only if weapon has target
   - raze planet - WONTFIX (no issues)
-  - missile barrage
+  - missile barrage - TODO (aoe, priority, trigger)
 - takadaran
   - coordinate attack
   - hold the line
@@ -119,7 +119,9 @@
 - novalith
   - fire novalith
 - items    
-  - rad bomb - WONTFIX (aoe) - can't be fixed on position targeted abilities
+  - rad bomb 
+    - WONTFIX (aoe) - can't be fixed on position targeted abilities
+    - TODO (trigger) - only use if weapon has target
   - flak - FIXED (overlap)
   - autorepair
   - autoloader
@@ -133,9 +135,9 @@
 - overseer
   - intimidating presence - overlap
 - kortul devastator
-  - power surge - condition
-  - jam weapons - overlap
-  - volatile nanites
+  - power surge - TODO (trigger)
+  - jam weapons - TODO (overlap)
+  - volatile nanites - TODO (aoe)
 - jarrasul evacuator
   - gravity warhead - FIXED (prio) - don't target subcaps, prioritize affected by rupture
   - subspace rupture 
@@ -178,6 +180,7 @@
   - attack nanites
   - regenerative armor
   - phase shield
+  - dark fleet beacon
 
 
 # other
