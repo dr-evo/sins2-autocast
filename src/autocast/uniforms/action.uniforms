@@ -4,7 +4,14 @@
             "action_value_id": "uniforms_gravity_well_radius_action_value",
             "action_value":
             {
-                "values": [30000, 30000, 30000, 30000, 30000]
+                "values": [30000.0, 30000.0, 30000.0, 30000.0, 30000.0]
+            }
+        },
+        {
+            "action_value_id": "uniforms_autocast_threat_range",
+            "action_value":
+            {
+                "values": [10000.0, 10000.0, 10000.0, 10000.0, 10000.0]
             }
         },
         {
@@ -19,5 +26,6 @@
                 "values": [1.0, 1.0, 1.0, 1.0, 1.0]
             }
         }
+
     ]
 }

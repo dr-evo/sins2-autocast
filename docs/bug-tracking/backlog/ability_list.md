@@ -88,7 +88,7 @@
   - energy transfer - OK - wontfix
   - emp - filter - fixed, only target capitals, check if target has sufficient antimatter, do not target crippled
   - magnetic singluarity - filter - fixed, prioritize swarms of corvettes, strike craft, torpedoes
-  - overcharge - don't trigger on non combatants (e.g. scouts), don't trigger if low on antimatter
+  - overcharge - filter - fixed, don't trigger if low on antimatter, trigger if threats nearby or damaged
 - marza
   - concussion charge
   - precision targeting
@@ -125,6 +125,7 @@
   - autoloader
   - hull repair
   - volatile accelerants
+  - pirate base
 
 # vasari
 - kanrak assailant
