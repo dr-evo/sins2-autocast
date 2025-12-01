@@ -94,7 +94,7 @@
   - concussion charge - FIXED (aoe, priority, trigger) - trigger only if weapon has target, prioritize caps with frigates/corvettes around, then just caps, then clumps of corvettes/frigates
   - precision targeting - WONTFIX - ability currently does not work
   - raze planet - WONTFIX (no issues)
-  - missile barrage - TODO (aoe, priority, trigger)
+  - missile barrage - FIXED (aoe) - minimum of 10 targets
 - takadaran
   - coordinate attack
   - hold the line
