@@ -2,6 +2,13 @@
     "version": 0,
     "action_values": [
     {
+        "action_value_id": "overcharge_auto_cast_minimum_antimatter_value",
+        "action_value":
+        {
+            "values": [240.0]
+        }
+    },
+    {
         "action_value_id": "overcharge_antimatter_cost_scalar_value",
         "action_value":
         {

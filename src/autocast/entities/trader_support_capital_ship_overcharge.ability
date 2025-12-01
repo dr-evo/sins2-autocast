@@ -32,18 +32,10 @@
                 "constraint_type": "composite_and",
                 "constraints": [
                     {
-                        "constraint_type": "composite_not",
-                        "constraint": {
-                            "constraint_type": "unit_passes_unit_constraint",
-                            "unit": {
-                                "unit_type": "current_spawner"
-                            },
-                            "unit_constraint": {
-                                "constraint_type": "has_missing_antimatter",
-                                "percentage_missing_threshold": 0.5
-                            }
-                        }
-
+                        "constraint_type": "value_comparison",
+                        "comparison_type": "greater_than_equal_to",
+                        "value_a": "uniforms_current_spawner_current_antimatter",
+                        "value_b": "overcharge_auto_cast_minimum_antimatter_value"
                     },
                     {
                         "constraint_type": "composite_or",
