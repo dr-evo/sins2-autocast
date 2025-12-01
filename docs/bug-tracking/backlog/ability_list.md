@@ -84,7 +84,7 @@
   - rapid manufacturing - FIXED (trigger) - avoid targeting on e.g. scouts
 - akkan
   - inspiring broadcast - WONTFIX (no issues)
-  - armistice - WONTFIX (no issues)
+  - armistice - WONTFIX (no issues)  TODO consider also triggering when allied capital is crippled or if many allied ships have hull damage
 - dunov
   - energy transfer - WONTFIX (no issues)
   - emp - FIXED (filter) - only target capitals, check if target has sufficient antimatter, ignore crippled

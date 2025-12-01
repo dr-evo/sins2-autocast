@@ -1,6 +1,7 @@
 Community autocast enhancements for vanilla.
 
 Modifies simulation - all players in multiplayer must have this mod.
+May affect save games - games saved with this mod may not be loadable without it (due to a marker buff for animosity used to prioritize vengeance).
 
 Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 
