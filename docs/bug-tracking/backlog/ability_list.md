@@ -12,8 +12,7 @@
 - radiance
   - detonate antimatter - FIXED (filter, overlap) - target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
   - animosity - FIXED (overlap, priority, trigger) - targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
-  - cleansing brilliance - FIXED (aoe, priority) - prioritize capitals with frigates in radius, then just caps, ignore frigates
-    - TODO review overlap necessity
+  - cleansing brilliance - FIXED (aoe, priority) - prioritize capitals with frigates in radius, then just caps, ignore frigates, stacks - no overlap check required
 - progenitor
   - shield boost - WONTFIX (no issues)
   - resurrection - WONTFIX (no issues)
@@ -25,7 +24,7 @@
   - reverie - FIXED (priority) - prioritize capitals, ignore if no shields, ignore structures (you have quell), ignore noncombat and carriers
   - guidance - FIXED (priority) - ignore subcaps, ignore crippled, ignore ships with less than 20% antimatter
   - quell - WONTFIX (no issues) - TODO : consider overlap prevention
-  - provoke hysteria - WONTFIX (no issues) - TODO : consider overlap prevention
+  - provoke hysteria - WONTFIX (no issues) , stacks - no overlap check needed
 - rapture
   - vertigo - FIXED (aoe) - at least 5 targets, ignore ships without weapons
   - vengeance - FIXED (priority, overlap) - don't overwrite existing buff, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
@@ -68,7 +67,8 @@
   - coil shock - FIXED (priority, aoe) - prioritize capitals, have at least 3 chain targets
 - hoshiko
   - repair droids - WONTFIX (no issues)
-  - recharger droid - FIXED (filter) - ignore subcaps, ignore crippled   TODO : add subcaps as low priority if there is nothing to repair or no caps to recharge
+  - recharger droid - FIXED (filter) - ignore subcaps, ignore crippled , use only if above 50 antimatter (prioritize using repair if low AM)  
+    - TODO : add subcaps as low priority if there is nothing to repair or no caps to recharge? (ensure not to recharge other hoshikos...) 
 - javelis
   - breaker missile - WONTFIX (no issues)
 - ogrov
@@ -92,7 +92,7 @@
   - overcharge - FIXED (filter) - don't trigger if low on antimatter, trigger if threats nearby or damaged
 - marza
   - concussion charge - FIXED (aoe, priority, trigger) - trigger only if weapon has target, prioritize caps with frigates/corvettes around, then just caps, then clumps of corvettes/frigates
-  - precision targeting - TODO (aoe, trigger) - trigger only if weapon has target
+  - precision targeting - WONTFIX - ability currently does not work
   - raze planet - WONTFIX (no issues)
   - missile barrage - TODO (aoe, priority, trigger)
 - takadaran

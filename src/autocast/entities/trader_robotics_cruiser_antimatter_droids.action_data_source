@@ -63,6 +63,13 @@
     }],
     "action_values": [
     {
+        "action_value_id": "antimatter_droids_autocast_minimum_antimatter_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+    {
         "action_value_id": "antimatter_cost_value",
         "action_value":
         {
