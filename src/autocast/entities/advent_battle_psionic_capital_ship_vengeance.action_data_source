@@ -90,6 +90,10 @@
                     "constraint_type": "has_recently_been_damaged"
                 },
                 {
+                    "constraint_type": "has_missing_shields",
+                    "percentage_missing_threshold": 0.5
+                },
+                {
                     "constraint_type": "composite_not",
                     "constraint": {
                         "constraint_type": "has_missing_hull"
