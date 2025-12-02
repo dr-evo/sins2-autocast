@@ -7,14 +7,14 @@
 - subjugator 
   - suppression - FIXED (priority, filter) - prioritize cruisers, don't target carriers, don't target ships without weapons
   - nullify - FIXED (priority, filter) - use only on capitals, don't target ships below 70 antimatter, ignore crippled
-- crusader 
+- crusader
   - ruthlessness - WONTFIX (aoe) - can't check if there are ships around current weapon target 
 - radiance
   - detonate antimatter - FIXED (filter, overlap) - target only capitals, ignore crippled, ignore ships below burnable antimatter, ignore already affected ships
   - animosity - FIXED (overlap, priority, trigger) - targets at least 5 targets, does not cast if another animosity active in area, do not cast if low on shields or hull
   - cleansing brilliance - FIXED (aoe, priority) - prioritize capitals with frigates in radius, then just caps, ignore frigates, stacks - no overlap check required
 - progenitor
-  - shield boost - WONTFIX (no issues)
+  - shield regeneration - WONTFIX (no issues)
   - resurrection - WONTFIX (no issues)
 - halcyon
   - telekinetic - WONTFIX (overlap) - preventing overlap might not be beneficial as there is a direct damage component and cooldown is short
@@ -27,7 +27,11 @@
   - provoke hysteria - WONTFIX (no issues) , stacks - no overlap check needed
 - rapture
   - vertigo - FIXED (aoe) - at least 5 targets, ignore ships without weapons
-  - vengeance - FIXED (priority, overlap) - don't overwrite existing buff, prioritize radiance with animosity, then caps and structures with 20% missing shields, then everything else
+  - vengeance - FIXED (priority, overlap) 
+    - don't overwrite existing buff
+    - prioritize radiance with animosity
+    - then caps and structures with 20% missing shields
+    - then cruisers and frigates with below 50% shields and no damaged hull
   - domination - FIXED (prio) - prioritize combat cruisers, don't use if target hull damaged
   - malice - FIXED (aoe, overlap) - cast only if at least 5 targets would be hit
 - oblivia
@@ -58,8 +62,9 @@
   - antimatter pod - dont use too soon
   - shield booster
   - harmony circuit - filter - FIXED, target advent ships only
-  - hull thingy
-  - shield thingy
+  - structural force fields
+  - votary siphon
+  - consecration inducer
 
 
 # TEC
@@ -132,31 +137,31 @@
 
 # vasari
 - kanrak assailant
-  - charged phase missile
+  - charged phase missile - WONTFIX (no issues)
 - overseer
-  - intimidating presence - overlap
+  - intimidating presence - WONTFIX (no issues)
 - kortul devastator
-  - power surge - TODO (trigger)
-  - jam weapons - TODO (overlap)
-  - volatile nanites - TODO (aoe)
+  - power surge - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
+  - jam weapons - WONTFIX (no issues)
+  - volatile nanites - FIXED (aoe, overlap, trigger) - don't overlap casts, use only if weapon has target (don't break formation), have at least 10 targets
 - jarrasul evacuator
   - gravity warhead - FIXED (prio) - don't target subcaps, prioritize affected by rupture
   - subspace rupture 
     - aoe - WONTFIX, can't be fixed on position targeted abilities
     - prio - FIXED - prioritizes targets with gravity warhead
-  - drain planet
+  - drain planet - WONTFIX (no issues)
 - skirantra carrier
-  - nanite armor - prio
-  - repair cloud - condition
-  - replicate forces - FIXED (priority, filter) - doesn't target non combatants
+  - nanite armor - WONTFIX (no issues)
+  - repair cloud - WONTFIX (no issues)
+  - replicate forces - FIXED (priority, filter) - doesn't target non-combatants
 - antorak marauder
   - phase out hull - FIXED (filter) - don't target enemies, target own recently damaged ships below 50% hull without phase restoration
-  - sabotage - overlap
-  - phase restoration
+  - sabotage - FIXED (overlap) - exclude already affected entities
+  - phase restoration - WONTFIX (no issues)
 - vulkoras desolator
-  - phase missile swarm - prio
-  - deploy siege platform
-  - disintegration bean - prio
+  - phase missile swarm - WONTFIX (no issues)
+  - deploy siege platform - WONTFIX (no issues)
+  - disintegration beam - FIXED (filter, priority) - use only if weapon has target (don't break formation), don't use on subcaps, use on targets without shields
 - sularkon tyrant
   - nano culling - prio
   - terrorize - prio
