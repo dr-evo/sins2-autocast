@@ -13,25 +13,24 @@
                 "enemy"
             ],
             "constraints": [
-                {
-                    "constraint_type": "is_always_a_threat"
-                },
-                {
-                    "constraint_type": "has_weapon"
-                },
-                {
-                    "constraint_type": "composite_not",
-                    "constraint": {
-                        "constraint_type": "has_missing_hull"
-                    }
-                },
-                {
-                    "constraint_type": "composite_not",
-                    "constraint": {
-                        "constraint_type": "is_carrier"
-                    }
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "has_weapon"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint": {
+                    "constraint_type": "has_missing_hull"
                 }
-            ]
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint": {
+                    "constraint_type": "is_carrier"
+                }
+            }]
         }
     },
     {
@@ -46,16 +45,15 @@
                 "enemy"
             ],
             "constraints": [
-                {
-                    "constraint_type": "is_always_a_threat"
-                },
-                {
-                    "constraint_type": "composite_not",
-                    "constraint": {
-                        "constraint_type": "has_missing_hull"
-                    }
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint": {
+                    "constraint_type": "has_missing_hull"
                 }
-            ]
+            }]
         }
     },
     {
