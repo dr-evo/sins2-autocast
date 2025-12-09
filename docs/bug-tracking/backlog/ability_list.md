@@ -57,6 +57,8 @@
 - temple of renewal
   - recharge antimatter
   - recharge shields
+- factory
+  - repair
 - items    
   - plasma nova - overlap - FIXED
   - antimatter pod - dont use too soon
@@ -83,13 +85,15 @@
   - fusillade - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
   - force field - FIXED (trigger) - trigger only if at least 10% shields lost and recently damaged
   - finest hour - FIXED (trigger) - only trigger if threats are around (ignore e.g. scouts)
+    - TODO: consider limiting other abilities to minimum 100 antimatter, so that kol can use finest hour as a priority?
 - sova
   - missile battery - FIXED (filter) - target on itself  , avoid targeting on e.g. scouts
   - mass production - FIXED (overlap, filter) - don't overlap casts, fix trigger on starbase/takadaran/sova building
   - rapid manufacturing - FIXED (trigger) - avoid targeting on e.g. scouts
 - akkan
   - inspiring broadcast - WONTFIX (no issues)
-  - armistice - WONTFIX (no issues)  TODO consider also triggering when allied capital is crippled or if many allied ships have hull damage
+  - armistice - WONTFIX (no issues)  
+    - TODO consider also triggering when allied capital is crippled or if many allied ships have hull damage
 - dunov
   - energy transfer - WONTFIX (no issues)
   - emp - FIXED (filter) - only target capitals, check if target has sufficient antimatter, ignore crippled
@@ -124,6 +128,8 @@
   - docking boons - prio, condition
 - novalith
   - fire novalith
+- repair platform
+  - repair
 - items    
   - rad bomb 
     - WONTFIX (aoe) - can't be fixed on position targeted abilities
@@ -180,14 +186,17 @@
   - the maw
 - orkulus
   - debris reintegration - FIXED (autocast) - casts if missing armor and was damaged recently
+- regeneration bay
+  - repair
 - items
   - repair nanites
   - recharger nanites
   - attack nanites
   - regenerative armor
   - phase shield
+  - strike craft / missile anchor slow thingy
   - dark fleet beacon
 
 
 # other
-- boarding crew
+- boarding crew - FIXED (prio, filter) - prioritize combat cruisers, don't use if target hull damaged
