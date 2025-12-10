@@ -10,6 +10,6 @@ rem /V	Verbose: Shows skipped files in the output, so you can see exactly which 
 rem /S	(Optional) Add this if you want to include subdirectories.
 
 
-robocopy "%SourceFolder%" "%DestinationFolder%" /XO /XL /V
+robocopy "%SourceFolder%" "%DestinationFolder%" /XO /XL
 
 
